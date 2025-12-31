@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int HolidayPlaylistGenerator() {
+    //beginner
+    int mood;
+    cout<<"What is your mood? Enter 1 for Happy,2 for Stressed, 3 for Focused, 4 for Chill";
+    cin>>mood;
+    if (mood==1) {
+        cout<<"Showing Happy Playlist";
+        cout<< "Song 1: Happy - Pharrell Williams (4:01)\n";
+        cout<< "Song 2: Walking on Sunshine - Katrina & The Waves (3:45)\n";
+        cout<< "Song 3: Can't Stop the Feeling! - Justin Timberlake (3:56)\n";
+
+    } else if (mood==2){
+        cout<<"Showing Stressed Playlist";
+        cout<< "Song 1: Weightless - Marconi Union (4:00)\n";
+        cout<< "Song 2: Clair de Lune - Claude Debussy (5:30)\n";
+        cout<< "Song 3: Spiegel im Spiegel - Arvo Pärt (12:00)\n";
+    }else if (mood==3){
+        cout<<"Showing Focused Playlist";
+        cout<< "Song 1: Concentration - The Beatles (3:00)\n";
+        cout<< "Song 2: Focus - The Beatles (3:15)\n";
+        cout<< "Song 3: Mindfulness - The Beatles (4:00)\n";
+    }else if (mood==4){
+        cout<<"Showing Chill Playlist";
+        cout<< "Song 1: Chill - The Beatles (3:00)\n";
+        cout<< "Song 2: Relax - The Beatles (3:15)\n";
+        cout<< "Song 3: Peaceful - The Beatles (4:00) \n";
+    } else{
+        cout<<"Invalid Input";
+    }
+}
